@@ -1,0 +1,146 @@
+body {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  background-color: #0000FF; }
+  body a {
+    text-decoration: none; }
+
+section {
+  padding: 10px 30px; }
+
+@media (max-width: 1000px) {
+  .main {
+    margin-bottom: 400px; } }
+.menuCon {
+  direction: ltr;
+  width: 100vw;
+  height: 8em;
+  display: flex;
+  flex-flow: row;
+  margin-top: 50px;
+  margin-bottom: 12px;
+  z-index: 2; }
+  .menuCon .menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 20vh; }
+    .menuCon .menu li {
+      display: inline-block;
+      padding: 10px 20px; }
+      .menuCon .menu li a {
+        color: white; }
+  .menuCon .triL {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-top: 20vh solid rgba(0, 0, 0, 0.5);
+    border-right: 60px solid transparent; }
+  .menuCon .triR {
+    width: 0;
+    height: 0;
+    border-bottom: 20vh solid white;
+    border-left: 60px solid transparent;
+    margin-left: 20px; }
+  .menuCon .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 20%;
+    height: 20vh;
+    background-color: white; }
+
+footer {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  padding: 20px;
+  background-color: #51585E;
+  color: white; }
+  footer > div {
+    padding: 20px; }
+    footer > div.desc {
+      border-left: 1px solid white;
+      min-width: 200px; }
+  footer .companyName {
+    font-size: 2em; }
+  footer .address {
+    min-width: 300px; }
+
+@media (max-width: 1000px) {
+  footer {
+    flex-wrap: wrap; }
+    footer > div {
+      width: 100%; }
+      footer > div.companyName {
+        text-align: center;
+        border-bottom: 1px solid white; }
+      footer > div.desc {
+        border-left: none;
+        border-bottom: 1px solid white; }
+      footer > div.address {
+        text-align: center;
+        border-left: none; } }
+.projectThumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.projectThumb {
+  display: flex;
+  height: 13vw;
+  width: 18vw;
+  margin: 10px;
+  background-size: cover;
+  background-color: red;
+  align-items: flex-end;
+  justify-content: center; }
+  .projectThumb .projectName {
+    width: 100%;
+    height: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center; }
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+
+.info {
+  margin-top: 73vh;
+  width: 100vw;
+  height: 55vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  position: relative; }
+  .info .homeName {
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 3em;
+    margin-top: 25px;
+    width: 33vw; }
+    .info .homeName div {
+      font-size: 3.5em;
+      line-height: 80%; }
+  .info .bullets {
+    flex-grow: 3.5;
+    margin-top: 20px; }
+    .info .bullets ul {
+      list-style-type: square; }
+    .info .bullets ul > li {
+      color: #bf4c4c;
+      font-size: 2.5em;
+      line-height: 60%; }
+    .info .bullets ul > li > span {
+      color: black;
+      font-size: 0.6em;
+      position: relative;
+      top: -5px; }
+
+/*# sourceMappingURL=app.css.map */

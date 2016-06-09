@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  //bottom: 0;
+  padding: 20px;
+
+
+  background-color: #51585E;
+  color: white;
+  > div {
+    padding: 20px;
+    &.desc {
+      border-left:1px solid white;
+      min-width: 200px;
+    }
+
+  }
+  .companyName {
+    font-size:2em;
+  }
+  .address {
+    min-width: 300px;
+  }
+
+}
+@media (max-width: 1000px) {
+  footer {
+    flex-wrap: wrap;
+    > div {
+      width:100%;
+      &.companyName {
+        text-align: center;
+        border-bottom:1px solid white;
+
+      }
+      &.desc {
+        border-left:none;
+        border-bottom:1px solid white;
+
+      }
+      &.address {
+        text-align: center;
+        border-left:none;
+      }
+
+    }
+  }
+}

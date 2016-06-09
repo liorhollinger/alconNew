@@ -1,0 +1,21 @@
+
+<section>
+
+    <h1>Projects</h1>
+
+    <div class="projectThumbs">
+
+
+        <a ng-repeat="proj in vm.projs" ng-href="#!/project/{{proj.id}}"  class="projectThumb" ng-style="{'background-image':'url(img/proj/'+proj.id+'.jpg)'}" >
+
+            <div class="projectName">{{proj.name}}</div>
+        </a>
+
+    </div>
+
+        <!--<pre hidden>-->
+            <!--{{vm.projs | json}}-->
+        <!--</pre>-->
+
+</section>
+
