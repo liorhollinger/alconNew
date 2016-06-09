@@ -7,10 +7,10 @@
 }
 
 .info {
-  margin-top: 73vh;
+  margin-top: 100vh;
   //margin-bottom: 0;
   width: 100vw;
-  height: 55vh;
+  //height: 55vh;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -23,36 +23,59 @@
     margin-top: 25px;
     width: 33vw;
 
-     div{
-       font-size: 3.5em;
-       line-height: 80%;
-     }
-  }.bullets {
-    flex-grow: 3.5;
-  margin-top: 20px;
-       ul
-       {
-         list-style-type: square;
-
-       }
-
-       ul > li
-       {
-         color: #bf4c4c;
-         font-size: 2.5em;
-         line-height: 60%;
-
-       }
-
-       ul > li > span
-       {
-         color: black;
-         font-size: 0.6em;
-         position: relative;
-         top:-5px;
-
-       }
+    div {
+      font-size: 3.5em;
+      line-height: 80%;
+    }
   }
+  .bullets {
+    flex-grow: 3.5;
+    margin-top: 20px;
+    ul {
+      list-style-type: square;
+    }
+    li {
+      color: #D62439;
+      font-size: 2.5em;
+      line-height: 60%;
+      span {
+        color: black;
+        font-size: 0.6em;
+        position: relative;
+        top: -5px;
+      }
+    }
+  }
+}
 
+.filler {
+  img {
+    width: 100vw;
+  }
+}
 
+.stats {
+  width: 100vw;
+  height: 50vh;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #D62439;
+  padding: 2em;
+  article {
+    text-align: center;
+
+    div:first-child {
+      font-size: 4em;
+    }
+    div:nth-child(2) {
+      font-size: 2em;
+    }
+  }
+  .separator {
+    font-size: 13em;
+    font-weight: -100;
+  }
 }
